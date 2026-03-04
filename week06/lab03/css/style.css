@@ -36,21 +36,25 @@ article {
 
 /* Flex Container */
 nav ul {
-  display: flex;
-  padding: 0;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-grow: 4;
-  flex-shrink: 1;
-  flex-basis: auto;
   border: 1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
-nav ul social {
-  flex-grow: 1;
+nav ul {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+nav li {
+  flex: 4;
+}
+
+.social {
+  flex: 1;
 }
 
 
