@@ -1,0 +1,103 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #98edd5;
+     font-family: "Archivo", sans-serif;
+}
+
+/* Navigation Tabs */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+}
+
+nav li {
+    flex: 4;
+}
+
+#nav {
+  color: white;
+  text-decoration: none;
+  background: rgba(0,0,0,0.2);
+  padding: 1em 0em;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+a:hover {
+  background:rgba(0,0,0,0.3);
+}
+
+#selected {
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Header Image*/
+#header {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Main Section of Page */
+main {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    overflow: auto;
+}
+
+/* Left Side Details*/
+#left-side {
+    width: 30%;
+    height: auto;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    padding-right: 20%;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/* Table Options */
+
+table, th, td {
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+
+/* Right Side Image */
+#right-side {
+    float: right;
+    width: 30%;
+    height: auto;
+    padding-left: 20%;
+    display: grid;
+    
+}
+
+.imgfit {
+   width: 80%;
+   margin: 0;
+   padding: 0;
+}
+
+figure {
+    width: fit-content;
+}
+
+figcaption {
+    margin: 0;
+    font-style: italic;
+}
