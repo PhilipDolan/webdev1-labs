@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <title>Form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+        <script src="/dist/semantic.min.js"></script>
+        <link rel="stylesheet" href="/dist/semantic.min.css">
+    </head>
+
+    <body>
+        <img src="images/website banner.png" id="header">
+
+        <nav class="ui top attached tabular menu">
+            <a class="item" href="index.html">Home</a>
+            <a class="item" href="hobbies.html">Hobbies</a>
+            <a class="item" href="george.html">George</a>
+            <a class="item" href="about.html">About</a>
+            <a class="item" href="contact.html">Contact</a>
+            <a class="active item" href="form.html">Form</a>
+        </nav>
+
+        <main class="ui bottom attached tab item active segment">
+            <form>
+                <p>
+                    <label for="name">Put your name here:</label>
+                    <input type="text" name="name" id="name" size="10" maxlength="15" pattern = “[A-Z][a-z]+([A-Z][a-z]+)?”>
+                </p>
+                <p>
+                    <label for="birthDate">Date of birth</label>
+                    <input type="date" name="birthDate" id="birthDate">
+                </p>
+                <p>
+                    <label for="quizQuestion">What is the airspeed of an unladen swallow?</label>
+                    <label for="what"><input type="radio" name="quizQuestion" id="what">What do you mean? An African or European swallow?</label>
+                    <label for="idk"><input type="radio" name="quizQuestion" id="idk">I don't know that!</label>
+                </p>
+                <p>
+                    <label for="phoneNumber">Enter your phone number<input type="tel" name="phoneNumber" id="phoneNumber" pattern = "^(\d{3})""></label>
+                </p>
+                <p>
+                    <input type="submit">
+                    <input type="reset">
+                </p>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1>Book a Car</h1>
+      </header>
+      <main>
+        <section id="form">
+          <h2>Contact Us</h2>
+          <form action="process.html" method="get" id="booking">
+            <div class="form-row">
+              <label for="contactname">Name</label>
+              <input type="text" name="contactname" id="contactname" autofocus="on" required="on" pattern="[[A-Z][a-z]+( [A-Z][a-z]+)?>
+            </div>
+            <div class="form-row">
+              <label for="contactname">Email Address</label>
+              <input type="email" name="contactname" id="contactname" required="yes" pattern = “[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$”>
+            </div>
+
+            <h2>Do you have a Driver's Licence</h2>
+            <div class="form-row">
+              <label for="contactname"><input type="radio" name="contactname" id="contactname">Yes</label>
+              <label for="contactname"><input type="radio" name="contactname" id="contactname">No</label>
+            </div>
+
+            <h2>Age</h2>
+            <div class="form-row">
+              <label for="contactname"><input type="number" name="contactname" id="contactname" min="17" max="80" step="1" required="yes"></label>
+            </div>
+
+            <h2>Booking Date</h2>
+            <div class="form-row">
+              <input type="date" name="contactname" id="contactname" required="yes">
+            </div>
+
+            <h2>Car</h2>
+            <div class="form-row">
+              <select name="contactname" id="contactname" multiple>
+                <option value="Ford Focus">Ford Focus</option>
+                <option value="Hyundai Tucson">Hyundai Tucson</option>
+                <option value="Toyota Rav4">Toyota Rav4</option>
+                <option value="Renault Kadjar">Renault Kadjar</option>
+                <option value="Nissan Kashqai">Nissan Qashqai</option>
+              </select>
+            </div>
+
+            <h2>Please provide any other details you think will be useful to us in the text area below (it may save calling or emailing you, and help avoid delays).</h2>
+            <h2>More details (as much as you think we'll need!)</h2>
+            <div class="form-row">
+              <textarea name="contactname" id="contactname"></textarea>
+            </div>
+
+            <div id="form-row">
+              <button type="submit">Continue</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+        <section id="image">
+          <figure>
+            <img src="images/car.jfif" alt="Car" class="ui fluid image">
+            <figcaption>Car Rental</figcaption>
+          </figure>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
