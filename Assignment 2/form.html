@@ -22,30 +22,53 @@
             <a class="item" href="about.html">About</a>
             <a class="item" href="contact.html">Contact</a>
             <a class="active item" href="form.html">Form</a>
+            <a class="item" href="pc specs.html">PC Specs</a>
+            <a class="item" href="cards.html">Cards</a>
         </nav>
 
         <main class="ui bottom attached tab item active segment">
             <form>
-                <p>
-                    <label for="name">Put your name here:</label>
-                    <input type="text" name="name" id="name" size="10" maxlength="15" pattern = “[A-Z][a-z]+([A-Z][a-z]+)?”>
-                </p>
-                <p>
-                    <label for="birthDate">Date of birth</label>
-                    <input type="date" name="birthDate" id="birthDate">
-                </p>
-                <p>
-                    <label for="quizQuestion">What is the airspeed of an unladen swallow?</label>
-                    <label for="what"><input type="radio" name="quizQuestion" id="what">What do you mean? An African or European swallow?</label>
-                    <label for="idk"><input type="radio" name="quizQuestion" id="idk">I don't know that!</label>
-                </p>
-                <p>
-                    <label for="phoneNumber">Enter your phone number<input type="tel" name="phoneNumber" id="phoneNumber" pattern = "^(\d{3})""></label>
-                </p>
-                <p>
-                    <input type="submit">
-                    <input type="reset">
-                </p>
+                <div class="form-row">
+                    <p>
+                        <label for="name">Put your name here:</label>
+                        <br>
+                        <input type="text" name="name" id="name" size="10" maxlength="15" pattern = “[A-Z][a-z]+([A-Z][a-z]+)?”>
+                    </p>
+                </div>
+                <div class="form-row">
+                    <p>
+                        <label for="birthDate">Date of birth:</label>
+                        <br>
+                        <input type="date" name="birthDate" id="birthDate">
+                    </p>
+                </div>
+                <div class="form-row">
+                    <p>
+                        <label for="quizQuestion">What is the airspeed of an unladen swallow?</label>
+                        <label for="what"><br><input type="radio" name="quizQuestion" id="what" checked="yes">What do you mean? An African or European swallow?</label>
+                        <label for="idk"><br><input type="radio" name="quizQuestion" id="idk">I don't know that!</label>
+                    </p>
+                </div>
+                <div class="form-row">
+                    <p>
+                        <label for="phoneNumber">Enter your phone number:</label>
+                        <br>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" pattern = "^(\d{3})"">
+                    </p>
+                </div>
+                <div class="form-row">
+                    <p>
+                        <label for="fiveYearsAgo">Enter the current date five years ago:</label>
+                        <br>
+                        <input type="date" name="fiveYearsAgo" id="fiveYearsAgo">
+                    </p>
+                </div>
+                <div class="form-row">
+                    <p>
+                        <input type="submit" name="submit">
+                        <input type="reset" name="reset">
+                    </p>
+                </div>
             </form>
         </main>
     </body>

@@ -97,3 +97,58 @@ figcaption {
     margin: 0;
     font-style: italic;
 }
+
+.form-row {
+    display: flex;
+}
+
+label {
+    flex: 0, 1, 20%;
+}
+
+form input, form select {
+    flex: 1;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+.ui.container {
+    margin: auto;
+}
+
+.ui.table {
+    align-items: center;
+    border: 1% solid green;
+    border-collapse: collapse;
+}
+.ui.table th, .ui.table td {
+    border: none;
+    background-color: white;
+}
+
+.ui.table th {
+    background-color: rgb(156, 240, 255);
+}
+
+.ui.centered.card {
+    border: 1px black solid;
+}
+
+.ui.cards {
+    display: flex;
+    margin: .875em .5em;
+    float: none;
+    flex-direction: column;
+    width: 50%;
+}
+
+.ui.card>.image {
+    position: relative;
+    display: block;
+    flex: 0 0 auto;
+    padding: 0;
+}
+
+.content {
+    font-size: small;
+}
